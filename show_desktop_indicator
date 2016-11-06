@@ -5,6 +5,7 @@
 # Author: Serg Kolo , contact: 1047481448@qq.com
 # Date: November 5th, 2016
 # Purpose: appindicator for minimizing all windows
+# Written for: http://askubuntu.com/q/846067/295286
 # Tested on: Ubuntu 16.04 LTS
 #
 #
@@ -37,20 +38,6 @@ from gi.repository import GLib as glib
 from gi.repository import AppIndicator3 as appindicator
 from gi.repository import Gtk as gtk
 from gi.repository import Gdk
-from gi.repository import Gio
-from gi.repository import Notify
-from collections import OrderedDict
-from os import statvfs
-# from collections import OrderedDict
-import xml.etree.ElementTree as ET
-import urllib.parse
-import subprocess
-import copy
-import shutil
-import dbus
-import math
-import json
-import os
 
 class ShowDesktop(object):
 
