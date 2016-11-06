@@ -88,6 +88,10 @@ class ShowDesktop(object):
                    self.show_desktop,[None]
         ]
         self.add_menu_item(*content)
+        last = None
+        for i in self.app_menu.get_children():
+             last = i
+        self.app.set_secondary_activate_target(last)
 
         content = [self.app_menu,gtk.ImageMenuItem,
                    'exit','Quit',
